@@ -118,3 +118,4 @@ python inference.py
 - 电力设备智能运维管理平台
 
 ## 致谢
+本项目基于Ultralytics YOLOv8开发，感谢开源社区的贡献。
