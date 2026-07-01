@@ -74,3 +74,47 @@
 - **少数类瓶颈**：样本量少的类别（如green-green-red）精度较低
 - **小目标问题**：小目标检测效果仍有提升空间
 - **类别不平衡**：通过重采样、数据增强等策略缓解
+
+## 快速开始
+
+### 环境安装
+```bash
+pip install ultralytics opencv-python matplotlib seaborn scikit-learn
+```
+
+### 数据预处理
+```bash
+python data_preprocess.py
+```
+
+### 模型训练
+```bash
+python train.py
+```
+
+### 模型评估
+```bash
+python evaluate.py
+```
+
+### 推理预测
+```bash
+python inference.py
+```
+
+## 优化方向
+
+1. **更高分辨率**：使用1280×1280输入，提升小目标检测效果
+2. **注意力机制**：引入CBAM、CA等注意力模块
+3. **改进损失函数**：使用SIoU、WIoU等更先进的损失函数
+4. **增强少数类**：针对少数类进行过采样和特定增强
+5. **前沿模型**：尝试YOLOv9、YOLOv10等更新模型
+
+## 应用场景
+
+- 变电站智能巡检机器人
+- 远程无人化控制柜监控中心
+- 设备异常状态自动预警
+- 电力设备智能运维管理平台
+
+## 致谢
